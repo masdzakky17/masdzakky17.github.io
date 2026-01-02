@@ -1,92 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kky</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kky | Link Bio</title>
 
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: "Poppins", sans-serif;
-            background: linear-gradient(135deg, #1a1a2e, #16213e);
-            color: white;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-        .card {
-            text-align: center;
-            width: 90%;
-            max-width: 400px;
-            background: rgba(255, 255, 255, 0.05);
-            padding: 30px;
-            border-radius: 20px;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 0 25px rgba(255, 105, 180, 0.4);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
+<style>
+*{
+    box-sizing:border-box;
+}
 
-        .profile-img {
-            width: 140px;
-            height: 140px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid #ff6ad5;
-            box-shadow: 0 0 25px #ff6ad5;
-            animation: glow 3s ease-in-out infinite;
-        }
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background: radial-gradient(circle at top, #2a003d, #0a0014);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+}
 
-        @keyframes glow {
-            0% { box-shadow: 0 0 15px #ff6ad5; }
-            50% { box-shadow: 0 0 35px #ff6ad5; }
-            100% { box-shadow: 0 0 15px #ff6ad5; }
-        }
+.card{
+    width:90%;
+    max-width:420px;
+    background:rgba(255,255,255,0.06);
+    backdrop-filter:blur(12px);
+    border-radius:22px;
+    padding:32px 24px;
+    text-align:center;
+    box-shadow:0 0 35px rgba(255,106,213,0.35);
+    animation:fadeUp .8s ease;
+}
 
-        h2 {
-            margin-top: 20px;
-            font-size: 25px;
-            letter-spacing: 1px;
-            color: #ffb3f6;
-            text-shadow: 0 0 10px #ff6ad5;
-        }
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(25px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
 
-        .btn {
-            display: block;
-            width: 85%;
-            margin: 15px auto 0;
-            padding: 14px;
-            background: linear-gradient(135deg, #ff6ad5, #ffa6e7);
-            color: #000;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 12px;
-            transition: 0.3s;
-            box-shadow: 0 0 15px rgba(255, 106, 213, 0.5);
-        }
+.profile-img{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #ff6ad5;
+    box-shadow:0 0 30px #ff6ad5;
+    animation:pulse 3s infinite;
+}
 
-        .btn:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 30px rgba(255, 106, 213, 0.9);
-        }
-    </style>
+@keyframes pulse{
+    0%{box-shadow:0 0 15px #ff6ad5;}
+    50%{box-shadow:0 0 40px #ff6ad5;}
+    100%{box-shadow:0 0 15px #ff6ad5;}
+}
+
+h2{
+    margin:18px 0 6px;
+    font-size:26px;
+    color:#ffb3f6;
+    text-shadow:0 0 12px #ff6ad5;
+}
+
+.bio{
+    font-size:14px;
+    opacity:.85;
+    margin-bottom:22px;
+}
+
+.btn{
+    display:block;
+    width:100%;
+    padding:14px;
+    margin:12px 0;
+    border-radius:14px;
+    background:linear-gradient(135deg,#ff6ad5,#ffa6e7);
+    color:#000;
+    font-weight:600;
+    text-decoration:none;
+    box-shadow:0 0 18px rgba(255,106,213,.5);
+    transition:.25s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 35px rgba(255,106,213,.9);
+}
+
+.footer{
+    margin-top:20px;
+    font-size:12px;
+    opacity:.5;
+}
+</style>
 </head>
+
 <body>
 
-    <div class="card">
+<div class="card">
 
-        <!-- Ganti nama file foto di bawah sesuai file yang kamu upload -->
-        <img src="profilkece.png" class="profile-img" alt="Profile">
+    <!-- ganti nama file sesuai foto kamu -->
+    <img src="gambarprofil.png" class="profile-img" alt="Profile">
 
-        <h2>Kky</h2>
+    <h2>Kky</h2>
+    <div class="bio">Streamer | Game | Daily Content ✨</div>
 
-        <a href="https://sociabuzz.com/kkykiw/tribe" target="_blank" class="btn">✨ Support via Sociabuzz</a>
+    <a href="https://sociabuzz.com/kkykiw/tribe" target="_blank" class="btn">💖 Support via Sociabuzz</a>
+    <a href="https://tiktok.com/@usernamekamu" target="_blank" class="btn">🎮 TikTok Live</a>
+    <a href="https://instagram.com/usernamekamu" target="_blank" class="btn">📸 Instagram</a>
 
-    </div>
+    <div class="footer">© 2026 • Kky</div>
+
+</div>
 
 </body>
 </html>
-
